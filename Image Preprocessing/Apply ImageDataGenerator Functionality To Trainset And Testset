@@ -1,0 +1,8 @@
+training_set = train_datagen.flow_from_directory('/content/gdrive/MyDrive/Car damage/body/training',
+                                                 target_size = (224, 224),
+                                                 batch_size = 10,
+                                                 class_mode = 'categorical')
+test_set = test_datagen.flow_from_directory('/content/gdrive/MyDrive/Car damage/body/validation',
+                                            target_size = (224, 224),
+                                            batch_size = 10,
+                                            class_mode = 'categorical')
